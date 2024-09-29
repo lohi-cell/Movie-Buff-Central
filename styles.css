@@ -1,0 +1,108 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    text-align: center;
+    background-color: #e63946;
+    color: white;
+    padding: 20px;
+  }
+  
+  .poster-img {
+    width: 300px;
+    height: auto;
+  }
+  
+  section {
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    color: #333;
+  }
+  
+  /* Character Grid Section */
+.character-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 characters per row */
+    gap: 20px; /* Space between characters */
+    margin: 20px;
+  }
+  
+  .character {
+    text-align: center;
+    background-color: #ffffff;
+    border: 2px solid #e63946; /* Red outline for each character card */
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  }
+  
+  .character img {
+    width: 150px; /* Fixed width for all images */
+    height: 200px; /* Fixed height for all images */
+    object-fit: cover; /* Ensures images are cropped correctly without distortion */
+    border: 2px solid #333; /* Outline around the image */
+    border-radius: 5px;
+  }
+  
+  h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  h3 {
+    color: #e63946; /* Same red color for character names */
+    margin-top: 10px;
+  }
+  
+  p {
+    color: #555;
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  
+  @media screen and (max-width: 1024px) {
+    .character-grid {
+      grid-template-columns: repeat(2, 1fr); /* 2 characters per row on smaller screens */
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .character-grid {
+      grid-template-columns: 1fr; /* 1 character per row on mobile screens */
+    }
+  }
+  
+  
+  #trailer iframe {
+    display: block;
+    margin: 0 auto;
+  }
+  
+  #quote {
+    text-align: center;
+  }
+  
+  button {
+    background-color: #e63946;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color:  #d62839;
+  }
+  

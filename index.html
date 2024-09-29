@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spider-Man: No Way Home Fan Page</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <h1>Spider-Man: No Way Home</h1>
+    <p style="color: black;font-size: larger; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Welcome to the fan page of Spider-Man: No Way Home!</p>
+    <img src="images/1.jpg" alt="Spider-Man No Way Home Poster" class="poster-img">
+    <img src="images/5.jpg" alt="Spider-Man No Way Home Poster" class="poster-img">
+    <img src="images/3.jpg" alt="Spider-Man No Way Home Poster" class="poster-img">
+  </header>
+
+<!-- Character Bios Section -->
+<section id="characters">
+    <h2 style="color: #d62839;">Character Bios</h2>
+  
+    <div class="character-grid">
+      <div class="character">
+        <img src="images/Tom.jpg" alt="Tom Holland as Spider-Man">
+        <h3>Peter Parker / Spider-Man (Tom Holland)</h3>
+        <p>Tom Holland plays Peter Parker, the Spider-Man of the MCU who must confront the challenges of his identity being revealed to the world.</p>
+      </div>
+  
+      <div class="character">
+        <img src="images/Zendaya.jpg" alt="Zendaya as MJ">
+        <h3>MJ (Zendaya)</h3>
+        <p>Zendaya portrays MJ, Peter Parker's love interest, who stands by his side through the chaos brought about by his unmasked identity.</p>
+      </div>
+  
+      <div class="character">
+        <img src="images/doc.jpg" alt="Doctor Strange">
+        <h3>Doctor Strange (Benedict Cumberbatch)</h3>
+        <p>Benedict Cumberbatch plays Doctor Strange, the sorcerer who helps Peter by casting a spell to erase the world’s knowledge of his identity as Spider-Man.</p>
+      </div>
+  
+      <div class="character">
+        <img src="images/Jacob.jpg" alt="Ned Leeds">
+        <h3>Ned Leeds (Jacob Batalon)</h3>
+        <p>Jacob Batalon plays Ned Leeds, Peter’s best friend who is caught up in the multiverse adventure and plays a key role in helping Spider-Man.</p>
+      </div>
+  
+      <div class="character">
+        <img src="images/Andrew.jpg" alt="Andrew Garfield as Spider-Man">
+        <h3>Peter Parker / Spider-Man (Andrew Garfield)</h3>
+        <p>Andrew Garfield returns as Spider-Man from an alternate universe, where he battles foes from his own timeline and helps the MCU Spider-Man.</p>
+      </div>
+  
+      <div class="character">
+        <img src="images/Tobey.jpg" alt="Tobey Maguire as Spider-Man">
+        <h3>Peter Parker / Spider-Man (Tobey Maguire)</h3>
+        <p>Tobey Maguire reprises his role as Spider-Man from the original trilogy, joining forces with the other Spider-Men to take on multiverse villains.</p>
+      </div>
+
+      <div class="character">
+        <img src="images/Alfred.jpg" alt="Alfred Molina as Doc Ock">
+        <h3>Dr. Otto Octavius / Doc Ock (Alfred Molina)</h3>
+        <p>Alfred Molina returns as Dr. Otto Octavius, the brilliant scientist who becomes the villain Doc Ock after a failed experiment with robotic tentacles.</p>
+      </div>
+      
+      <div class="character">
+        <img src="images/Willem.jpg" alt="Willem Dafoe as Green Goblin">
+        <h3>Norman Osborn / Green Goblin (Willem Dafoe)</h3>
+        <p>Willem Dafoe reprises his role as Norman Osborn, also known as the Green Goblin, who brings chaos and terror from another dimension.</p>
+      </div>
+      
+    </div>
+  </section>
+  
+  
+  <!-- Embedded Movie Trailer Section -->
+  <section id="trailer">
+    <h2 style="color: #d62839;">Movie Trailer</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/ZYzbalQ6Lg8" 
+            title="Spider-Man: No Way Home Trailer" frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen></iframe>
+  </section>
+
+  <!-- Quote of the Day Section -->
+  <section id="quote">
+    <h2 style="color: #d62839;">Quote of the Day</h2>
+    <p id="random-quote" style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: xx-large;"></p>
+    <button onclick="generateQuote()">New Quote</button>
+  </section>
+
+  <!-- Trivia Quiz Section -->
+<section id="trivia">
+    <h2 style="color: #d62839;">Trivia Quiz</h2>
+    <p style="color: #d62839;font-family: fantasy;font-size: xx-large;">Test your knowledge about Spider-Man: No Way Home!</p>
+  
+    <form id="trivia-form">
+      <!-- Question 1 -->
+      <div class="quiz-question">
+        <p style="font-family: cursive; font-size: large; color: black;">Who helps Peter Parker when his identity is revealed?</p>
+        <ul>
+          <li><input type="radio" name="q1" value="wrong"> Tony Stark</li>
+          <li><input type="radio" name="q1" value="correct"> Doctor Strange</li>
+          <li><input type="radio" name="q1" value="wrong"> Nick Fury</li>
+        </ul>
+      </div>
+  
+      <!-- Question 2 -->
+      <div class="quiz-question">
+        <p style="font-family: cursive; font-size: large; color: black ;">Who is the main villain Peter faces in the final battle?</p>
+        <ul>
+          <li><input type="radio" name="q2" value="correct"> Green Goblin</li>
+          <li><input type="radio" name="q2" value="wrong"> Doctor Octopus</li>
+          <li><input type="radio" name="q2" value="wrong"> Sandman</li>
+        </ul>
+      </div>
+  
+      <button type="button" onclick="submitQuiz()">Submit Quiz</button>
+    </form>
+  </section>
+  
+
+  <script src="scripts.js"></script>
+</body>
+</html>
